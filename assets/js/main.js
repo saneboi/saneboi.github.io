@@ -141,5 +141,34 @@
 						$menu._hide();
 
 			});
+//our functions
+function calcMale() {
+                var weight = document.getElementById('Weight').value;
+                var bfp = document.getElementById('BodyFP').value;
+                var activity = document.getElementById('Activity').value;
+		var recommendedC = document.getElementById('RecommendedC').value;
+                
+                var maleCalories = parseFloat(weight) * parseFloat(bfp) * parseFloat(activity);
+            
+
+            
+
+
+}    
+	
+function calcMale() {
+                var weight = document.getElementById('Weight').value;
+                var bfp = document.getElementById('BodyFP').value;
+                var activity = document.getElementById('Activity').value;
+		var recommendedC = document.getElementById('RecommendedC').value;
+                
+                var femaleCalories = parseFloat(weight) * parseFloat(bfp) * parseFloat(activity);
+            
+
+            
+
+
+}    
+
 
 })(jQuery);
