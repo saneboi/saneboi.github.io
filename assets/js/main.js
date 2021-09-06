@@ -156,7 +156,7 @@ function calcMale() {
 
 }    
 	
-function calcMale() {
+function calcMale(float ) {
                 var weight = document.getElementById('Weight').value;
                 var bfp = document.getElementById('BodyFP').value;
                 var activity = document.getElementById('Activity').value;
