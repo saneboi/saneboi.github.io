@@ -143,7 +143,8 @@
 			});
 //our functions
 function calcMale(var w, var a, var h, var f) {
-                var age = a;
+                alert("I'm in calcMale");
+		var age = a;
                 var height = h;
                 var weight = w;
 		var activityFactor = f;
@@ -168,7 +169,7 @@ function calcFemale(var w, var a, var h, var f) {
 		var calories = bmr * parseFloat(activityFactor);            
 		
             	alert(calories + " is the amount of calories you should intake right now. However, your body might be different, so talk to your doctor for more information. Thanks for using Calorie Calculator!");
-
+		
 
 }    
 
