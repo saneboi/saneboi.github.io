@@ -42,8 +42,8 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Male Meal Planner</h2>
-								<p>Complete this form to figure out how many calories you should eat every day!</p>
+								<h2>Male Calorie Calculator</h2>
+								<p>Complete this form to figure out how many calories you should intake every day!</p>
 							</div>
 						</header>
 
@@ -52,11 +52,27 @@
 						<div class="inner">
 							<h1 class="major">Calculate!</h1>
 							<form>
-							<label for="weight">Your weight(lbs):</label><br>
+							<label for="weight">Weight(lbs):</label><br>
 							<input type="text" id="weight" style="width:300px;" /><br>
-							<label for="sqft">How many square feet is your house?</label><br>
-							<input type="text" id="sqft" style="width:300px;" /><br>	
-							<button onclick="calc()">Calculate!</button>
+							<label for="age">Age(Years):</label><br>
+							<input type="text" id="weight" style="width:300px;" /><br>
+							<label for="height">Height(Inches)</label><br>
+							<input type="text" id="sqft" style="width:300px;" /><br>
+							<label for="activityFactor">Choose an Activity Factor:</label>
+							<select name="" id="dog-names">
+							  <option value="1.2">Little to no Excercise</option>
+							  <option value="1.375">Light Excercise 1-3 Days a Week</option>
+							  <option value="1.55">Moderate Execise 3-5 Days a Week</option>
+							  <option value="1.725">Hard Exercise/Sports 6-7 Days a Week</option>
+							  <option value="1.9">Very Hard Exercise/Sports & Physical Job or 2x Training</option>
+							</select>
+							<button type="calculateMale">Calculate!</button>
+							<script>
+							if(document.getElementById('calculateMale').clicked == true){
+								calcMale(document.getElementById("weight"), document.getElementById("age"), document.getElementById("height"), document.getElementById("activityFactor"));
+								
+							}
+							</script>
 							</form>
 							
 							
