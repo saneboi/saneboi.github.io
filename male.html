@@ -68,11 +68,11 @@
 							</select>
 							<button type="button">Calculate!</button>
 							<script>
-							document.getElementById('button').onclick = function() {
+							document.getElementById("button").addEventListener("click", function()) {
 								alert("Button is clicked and calcMale should be called.");
 								calcMale(document.getElementById("weight"), document.getElementById("age"), document.getElementById("height"), document.getElementById("activityFactor"));
 								
-							}
+							});
 							</script>
 							</form>
 							
