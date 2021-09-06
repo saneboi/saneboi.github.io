@@ -66,9 +66,9 @@
 							  <option value="1.725">Hard Exercise/Sports 6-7 Days a Week</option>
 							  <option value="1.9">Very Hard Exercise/Sports & Physical Job or 2x Training</option>
 							</select>
-							<button type="calculateMale">Calculate!</button>
+							<button type="button">Calculate!</button>
 							<script>
-							if(document.getElementById('calculateMale').clicked == true){
+							document.getElementById('button').onclick = function() {
 								alert("Button is clicked and calcMale should be called.");
 								calcMale(document.getElementById("weight"), document.getElementById("age"), document.getElementById("height"), document.getElementById("activityFactor"));
 								
