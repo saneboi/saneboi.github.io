@@ -142,7 +142,7 @@
 
 			});
 //our functions
-function calcMale(var a, var h, var w, var f) {
+function calcMale(var w, var a, var h, var f) {
                 var age = a;
                 var height = h;
                 var weight = w;
@@ -157,7 +157,7 @@ function calcMale(var a, var h, var w, var f) {
 
 }    
 	
-function calcFemale(var a, var h, var w, var f) {
+function calcFemale(var w, var a, var h, var f) {
                 var age = a;
                 var height = h;
                 var weight = w;
