@@ -142,33 +142,34 @@
 
 			});
 //our functions
-function calcMale() {
-                var weight = document.getElementById('Weight').value;
-                var bfp = document.getElementById('BodyFP').value;
-                var activity = document.getElementById('Activity').value;
-		var recommendedC = document.getElementById('RecommendedC').value;
+function calcMale(var a, var h, var w, var f) {
+                var age = a;
+                var height = h;
+                var weight = w;
+		var activityFactor = f;
                 
-                var maleCalories = parseFloat(weight) * parseFloat(bfp) * parseFloat(activity);
-            
-
-            
+		
+		var bmr = 66 + (6.3 * parseFloat(weight)) + (12.9 * parseFloat(height)) - (6.8 * parseFloat(age));
+		var calories = bmr * parseFloat(activityFactor);            
+		
+            	alert(calories + " is the amount of calories you should intake right now. However, your body might be different, so talk to your doctor for more information. Thanks for using Calorie Calculator!");
 
 
 }    
 	
-function calcMale(float ) {
-                var weight = document.getElementById('Weight').value;
-                var bfp = document.getElementById('BodyFP').value;
-                var activity = document.getElementById('Activity').value;
-		var recommendedC = document.getElementById('RecommendedC').value;
+function calcFemale(var a, var h, var w, var f) {
+                var age = a;
+                var height = h;
+                var weight = w;
+		var activityFactor = f;
                 
-                var femaleCalories = parseFloat(weight) * parseFloat(bfp) * parseFloat(activity);
-            
-
-            
+		
+		var bmr = 655 + (4.3 * parseFloat(weight)) + (4.7 * parseFloat(height)) - (4.7 * parseFloat(age));
+		var calories = bmr * parseFloat(activityFactor);            
+		
+            	alert(calories + " is the amount of calories you should intake right now. However, your body might be different, so talk to your doctor for more information. Thanks for using Calorie Calculator!");
 
 
 }    
-
 
 })(jQuery);
